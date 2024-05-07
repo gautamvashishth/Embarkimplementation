@@ -1,0 +1,469 @@
+[
+	{
+		"templateOptions": {
+			"label": "PERSONAL INFORMATION",
+			"useCustom": false
+		},
+		"hideExpression": "",
+		"wrapper": "panel",
+		"fieldGroup": [
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Do you meet our minimum requirement of 5 years of full-time, professional work experience?",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Yesno')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "K1",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Intended Year of entry"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('YearOfEntry')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "K2",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Salutation",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Salutation1')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "K3",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Legal First Name",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "K4",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Legal Last Name",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "K5",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Pronouns"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Pronouns')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "K6",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Preferred Name"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "K7",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Email",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "K8",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "embarkInput",
+				"templateOptions": {
+					"label": "Date of Birth",
+					"required": true,
+					"convert": "date"
+				},
+				"key": "K9",
+				"data": {
+					"postSubmitEditable": true
+				},
+				"hideExpression": "model.K5 == \"University\""
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country of Citizenship",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('countries')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "K10",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Other Citizenships held, if applicable"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('countries')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "othercitizenship"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country of Birth"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('countries')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "birthcountry"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country of Residence"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('countries')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "countryresidence"
+			},
+			{
+				"templateOptions": {
+					"label": ""
+				},
+				"previewTemplate": "",
+				"template": "<p><strong style=\"-webkit-text-stroke-width:0px;background-color:rgb(246, 247, 248);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Nunito, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Preferred Mailing Address</strong><br><span style=\"background-color:rgb(246,247,248);color:rgb(0,0,0);\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-family:Nunito, sans-serif;font-size:12.88px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:0.1px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">(Where all admission documents will be sent)</span></span></p>",
+				"className": "section-label",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Street Address",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "streetadd"
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Street Address Cont․"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "streetadd1",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "City",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "city",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "State/Province "
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "state"
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Country",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "country",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "Postal Code"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "postcode",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country code"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "countrycode",
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('CountryCodes')"
+				},
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "embarkInput",
+				"templateOptions": {
+					"label": "Mobile Phone Number",
+					"required": true,
+					"convert": "decimal"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "phonenum",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Country code"
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('CountryCodes')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "countcode"
+			},
+			{
+				"type": "embarkInput",
+				"templateOptions": {
+					"label": "Home Phone Number",
+					"convert": "decimal"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "hphonenum",
+				"showAdvancedProperties": false
+			},
+			{
+				"templateOptions": {
+					"label": ""
+				},
+				"previewTemplate": "",
+				"template": "<p><strong>Program Information</strong></p>",
+				"className": "section-label"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "How did you hear about the program?* "
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('howprogram')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "proginfo",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "(if applicable, Please Specify)"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "proginfo1",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Have you spoken to a MS in Risk Management program alumni/student? "
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Yesno')"
+				},
+				"key": "riskmanage",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalInput",
+				"templateOptions": {
+					"label": "(If so, please sate his/her name )"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "riskmanage1",
+				"hideExpression": "model.riskmanage == \"No\""
+			},
+			{
+				"type": "horizontalTextarea",
+				"templateOptions": {
+					"label": "Please list any other graduate schools to which you are applying, including other programs at NYU Stern or New York University․ Write \"none\" if appropriate․",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "othergrad",
+				"showAdvancedProperties": false
+			},
+			{
+				"templateOptions": {
+					"label": ""
+				},
+				"previewTemplate": "",
+				"template": "<p><strong>Background Information</strong></p>",
+				"className": "section-label"
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Have you ever been convicted of a crime involving violence or financial impropriety?",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Yesno')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "crime",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalTextarea",
+				"templateOptions": {
+					"label": "Please Explain.",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "crime1",
+				"hideExpression": "model.crime == \"No\"",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Have you ever had a professional license suspended or revoked or have you ever been sanctioned by a professional organization?",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "license",
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Yesno')"
+				}
+			},
+			{
+				"type": "horizontalTextarea",
+				"templateOptions": {
+					"label": "Please Explain.",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "license1",
+				"hideExpression": "model.license == \"No\"",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalSelect",
+				"templateOptions": {
+					"label": "Have you ever been subject to academic discipline, placed on probation, suspended, or required to withdraw from any college or university?",
+					"required": true
+				},
+				"expressionProperties": {
+					"templateOptions․options": "model․getList('Yesno')"
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "disciplineacad",
+				"showAdvancedProperties": false
+			},
+			{
+				"type": "horizontalTextarea",
+				"templateOptions": {
+					"label": "Please Explain.",
+					"required": true
+				},
+				"data": {
+					"postSubmitEditable": true
+				},
+				"key": "disciplineacad1",
+				"hideExpression": "model.disciplineacad == \"No\""
+			}
+		]
+	}
+]
